@@ -1,0 +1,33 @@
+plans: repl -> record game | analyze game | save game | load game | customize
+  record game ->  record plays keyed one at a time, should be able to pause it
+                  and go to analysis mid-game and then return to continue
+                  keying game. detect miskeyed plays and ask for corrections
+                  at some point. preferably automatically keeps track of
+                  score
+                  play data type is: player + type of play + quality of play
+                  game data type is: list of plays + other meta information
+
+  analyze game -> load analysis formulas (should come with some default
+                  analysis formulas), create analysis formulas. Once an
+                  analysis formula is defined, should be able to "call" it
+                  and have the results appear for each player.
+                  would be nice to have the added functionality of loading/
+                  creating/calling analysis tables, which display collections
+                  of formulas as a table vs players
+                  formula data type is: type of play + operations to do based
+                  counts of play quality.
+                      eg: passing_average =
+                          {
+                            pass,
+                            (3 * 3_pass + 2 * 2_pass + ... + ) / pass
+                          }
+  customize    -> customize keybindings. keybindings should come in a default
+                  json. perhaps could add the option to customize more things,
+                  such as adding play_types
+
+ideas:
+- use better package for creating repl, such as click.
+- include time stamps on recorded plays
+- record data using a GUI, so peope can click where attacks started and ended,
+  for example
+- ...
