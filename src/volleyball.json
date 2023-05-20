@@ -1,0 +1,50 @@
+[
+  {
+    "play_name": "serve",
+    "key_bind": "s",
+    "quality_options": [
+      {
+        "quality_name": "error",
+        "key_bind": "l",
+        "value": -1,
+        "point_value": -1
+      },
+      {
+        "quality_name": "ace",
+        "key_bind": "p",
+        "value": 1,
+        "point_value": 1
+      }
+    ]
+  },
+  {
+    "play_name": "pass",
+    "key_bind": "a",
+    "quality_options": [
+      {
+        "quality_name": "error",
+        "key_bind": "4",
+        "value": 0,
+        "point_value": -1
+      },
+      {
+        "quality_name": "one-pass",
+        "key_bind": "1",
+        "value": 1,
+        "point_value": 0
+      },
+      {
+        "quality_name": "two-pass",
+        "key_bind": "2",
+        "value": 2,
+        "point_value": 0
+      },
+      {
+        "quality_name": "three-pass",
+        "key_bind": "3",
+        "value": 3,
+        "point_value": 0
+      }
+    ]
+  }
+]
